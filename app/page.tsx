@@ -65,18 +65,20 @@ export default function Home() {
                                     className={`${styles.textAccent} text-sm leading-none mt-2.5 mr-1 hidden xl:block`}
                                 >
                                     Experienced in building web and mobile apps,
-                                    landing pages, and scalable design systems.
+                                    landing pages, branding, and design systems.
                                 </p>
 
                                 <p
                                     className={`${styles.textAccent} text-sm leading-none mt-2.5 mr-1 xl:hidden`}
                                 >
-                                    Web and mobile apps, landing pages, and
-                                    scalable design systems.
+                                    Web and mobile apps, landing pages,
+                                    branding, and design systems.
                                 </p>
                             </div>
                             <Link
-                                href={"mailto:joaopedro@kunskap.studio"}
+                                href={
+                                    "https://cal.com/talvezjoaopedro/discovery"
+                                }
                                 target="_blank"
                                 className={`${styles.cta}`}
                             >
