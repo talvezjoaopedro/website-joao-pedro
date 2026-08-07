@@ -13,7 +13,7 @@ interface socialLink {
 const socials: socialLink[] = [
     {
         label: "Portfolio",
-        url: "https://talvezjoaopedro.framer.website",
+        url: "https://www.figma.com/design/tO5UIu2VmnEWYjwIqSYnWA/JP-%E2%80%A2-Portfolio?node-id=33-9712&t=GbiWTqv4vY5ghROg-1",
         icon: "vercel.svg",
     },
     {
