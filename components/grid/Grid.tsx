@@ -72,7 +72,7 @@ const Grid = ({ direction, order = 0 }: Props) => {
                         height={66}
                         width={20}
                         src="dash-border.svg"
-                        alt="dashed border"
+                        alt=""
                         className={styles.gridBorder}
                     ></Image>
                 </div>

@@ -8,6 +8,8 @@ interface socialLink {
     label: string;
     url: string;
     icon: string;
+    /** rel="me" marks the profiles that are this same person. */
+    rel: string;
 }
 
 const socials: socialLink[] = [
@@ -15,21 +17,25 @@ const socials: socialLink[] = [
         label: "Portfolio",
         url: "https://www.figma.com/design/tO5UIu2VmnEWYjwIqSYnWA/JP-%E2%80%A2-Portfolio?node-id=33-9712&t=GbiWTqv4vY5ghROg-1",
         icon: "vercel.svg",
+        rel: "noopener noreferrer",
     },
     {
         label: "GitHub",
         url: "https://github.com/talvezjoaopedro",
         icon: "vercel.svg",
+        rel: "me noopener noreferrer",
     },
     {
         label: "LinkedIn",
         url: "https://www.linkedin.com/in/talvezjoaopedro/",
         icon: "vercel.svg",
+        rel: "me noopener noreferrer",
     },
     {
         label: "Layers",
         url: "https://layers.to/talvezjoaopedro",
         icon: "vercel.svg",
+        rel: "noopener noreferrer",
     },
 ];
 
@@ -38,13 +44,14 @@ const SocialLinks = () => {
         <Link
             key={index}
             target="_blank"
+            rel={social.rel}
             className={styles.linkItem}
             href={social.url}
         >
             <div className={styles.linkItemStart}>
                 <p>{social.label}</p>
             </div>
-            <div className={styles.linkItemEnd}>
+            <div className={styles.linkItemEnd} aria-hidden="true">
                 <p>{social.label}</p>
             </div>
         </Link>
