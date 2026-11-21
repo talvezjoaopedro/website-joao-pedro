@@ -1,0 +1,30 @@
+# João Pedro Magalhães
+
+> Product Designer & Design Engineer in Portugal. UI/UX design, high-fidelity
+> prototypes, design systems and branding, from Figma to code.
+
+Product Designer and Design Engineer based in Barcelos, Portugal, also known
+online as talvezjoaopedro. Works across product and UI/UX design, high-fidelity
+prototyping, design systems, branding and frontend development, carrying work
+from Figma through to production code.
+
+## Focus
+
+- Product design, UI/UX design
+- High-fidelity prototypes
+- Design systems
+- Branding
+- Frontend development: React, OutSystems
+- Accessibility (WCAG)
+
+## Links
+
+- [Website](https://talvezjoaopedro.com): single-page portfolio and contact point
+- [Portfolio](https://www.figma.com/design/tO5UIu2VmnEWYjwIqSYnWA/JP-%E2%80%A2-Portfolio?node-id=33-9712&t=GbiWTqv4vY5ghROg-1): selected work, as a Figma file
+- [GitHub](https://github.com/talvezjoaopedro): code
+- [LinkedIn](https://www.linkedin.com/in/talvezjoaopedro/): professional profile
+- [Layers](https://layers.to/talvezjoaopedro): design profile
+
+## Contact
+
+- [Book a discovery call](https://cal.com/talvezjoaopedro/discovery)
