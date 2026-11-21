@@ -4,41 +4,43 @@ import SocialLinks from "@/components/socialLinks/SocialLinks";
 import Squares from "@/components/squares/Squares";
 import styles from "../styles/mat.module.scss";
 import Grid from "@/components/grid/Grid";
+import { GridCounterProvider } from "@/components/grid/GridCounter";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
-            <div
-                className={`${styles.containerSecondary} ${styles.containerTop}`}
-            >
-                <div className={styles.containerStart}>
-                    <Grid direction="ltr"></Grid>
-                </div>
-                <div className={`${styles.containerCenter}`}>
-                    <div className="relative h-full overflow-hidden m-4 -mt-4">
-                        <Image
-                            src={"grid.svg"}
-                            alt="grid"
-                            height={634}
-                            width={448}
-                            className="absolute bottom-0 left-0"
-                        ></Image>
-                        <Image
-                            src={"animation-1.svg"}
-                            alt="grid"
-                            height={634}
-                            width={448}
-                            className="absolute bottom-0.5 left-0"
-                        ></Image>
+        <GridCounterProvider>
+            <div className={styles.container}>
+                <div
+                    className={`${styles.containerSecondary} ${styles.containerTop}`}
+                >
+                    <div className={styles.containerStart}>
+                        <Grid direction="ltr" order={0}></Grid>
                     </div>
-                </div>
-                <div className={styles.containerEnd}>
-                    <Grid direction="rtl"></Grid>
-                </div>
+                    <div className={`${styles.containerCenter}`}>
+                        <div className="relative h-full overflow-hidden m-4 -mt-4">
+                            <Image
+                                src={"grid.svg"}
+                                alt="grid"
+                                height={634}
+                                width={448}
+                                className="absolute bottom-0 left-0"
+                            ></Image>
+                            <Image
+                                src={"animation-1.svg"}
+                                alt="grid"
+                                height={634}
+                                width={448}
+                                className="absolute bottom-0.5 left-0"
+                            ></Image>
+                        </div>
+                    </div>
+                    <div className={styles.containerEnd}>
+                        <Grid direction="rtl" order={0}></Grid>
+                    </div>
             </div>
             <div className={styles.containerMain}>
                 <div className={styles.containerStart}>
-                    <Grid direction="ltr"></Grid>
+                    <Grid direction="ltr" order={1}></Grid>
                 </div>
                 <div className={styles.containerCenter}>
                     <div className={styles.card}>
@@ -109,14 +111,14 @@ export default function Home() {
                     <SocialLinks></SocialLinks>
                 </div>
                 <div className={styles.containerEnd}>
-                    <Grid direction="rtl"></Grid>
+                    <Grid direction="rtl" order={1}></Grid>
                 </div>
             </div>
             <div
                 className={`${styles.containerSecondary} ${styles.containerBottom}`}
             >
                 <div className={styles.containerStart}>
-                    <Grid direction="ltr"></Grid>
+                    <Grid direction="ltr" order={2}></Grid>
                 </div>
                 <div className={`${styles.containerCenter} pt-4`}>
                     <div className="relative h-full overflow-hidden mx-4">
@@ -137,9 +139,10 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.containerEnd}>
-                    <Grid direction="rtl"></Grid>
+                    <Grid direction="rtl" order={2}></Grid>
                 </div>
             </div>
-        </div>
+            </div>
+        </GridCounterProvider>
     );
 }

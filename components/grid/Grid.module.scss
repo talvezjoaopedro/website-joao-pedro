@@ -14,9 +14,11 @@
     }
 
     &Square {
-        height: 83px;
-        min-height: 83px;
-        width: 83px;
+        // Value comes from SQUARE_SIZE in Grid.tsx, which counts how many
+        // squares fit in a section using that same number.
+        height: var(--grid-square-size, 80px);
+        min-height: var(--grid-square-size, 80px);
+        width: var(--grid-square-size, 80px);
         outline: $border;
         outline-offset: -1px;
         position: relative;
