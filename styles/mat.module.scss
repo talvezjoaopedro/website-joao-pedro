@@ -55,7 +55,7 @@
 	&End {
 		position: relative;
 		outline: $border;
-		outline-offset: -1px;
+		outline-offset: $outline-offset;
 		width: 100%;
 		min-height: 240px;
 		flex: 1;
@@ -65,10 +65,16 @@
 	&Center {
 		position: relative;
 		outline: $border;
-		outline-offset: -1px;
+		outline-offset: $outline-offset;
 		min-width: 350px;
 		max-width: 480px;
 		flex: 1;
+	}
+
+	&Start,
+	&End,
+	&Center {
+		background-color: $color-primary;
 	}
 }
 
@@ -79,13 +85,13 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	outline: $border;
-	outline-offset: -1px;
+	outline-offset: $outline-offset;
 	min-height: 212px;
 
 	&Avatar {
 		width: calc(calc(5 / 12) * 100%);
 		outline: $border;
-		outline-offset: -1px;
+		outline-offset: $outline-offset;
 	}
 
 	&Heading {
@@ -93,7 +99,7 @@
 		padding: 16px;
 		padding-bottom: 18px;
 		outline: $border;
-		outline-offset: -1px;
+		outline-offset: $outline-offset;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;

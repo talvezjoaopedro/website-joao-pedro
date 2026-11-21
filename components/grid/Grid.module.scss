@@ -20,7 +20,8 @@
         min-height: var(--grid-square-size, 80px);
         width: var(--grid-square-size, 80px);
         outline: $border;
-        outline-offset: -1px;
+        outline-offset: $outline-offset;
+        background-color: $color-primary;
         position: relative;
         pointer-events: none;
 

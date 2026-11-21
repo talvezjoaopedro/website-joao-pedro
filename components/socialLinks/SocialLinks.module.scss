@@ -73,7 +73,7 @@ $link-height: 72px;
         // de baixo do card (em flex as margens não colapsam).
         margin: 0 16px 16px;
         outline: $border;
-        outline-offset: -1px;
+        outline-offset: $outline-offset;
         display: flex;
         flex-direction: column;
         flex: 1;

@@ -5,9 +5,10 @@
         position: absolute;
         outline: $border;
         outline-offset: -1px;
-        height: 16px;
-        width: 16px;
+        height: 15.5px;
+        width: 15.5px;
         pointer-events: none;
+        background-color: $color-primary;
     }
 
     &Tl, &Tr {
