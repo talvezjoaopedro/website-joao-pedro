@@ -42,7 +42,12 @@
 		width: 100%;
 
 		#{$container}Center {
-			min-height: 400px;
+			// Fixo e múltiplo de 80px (o tamanho do quadrado da grid), para a
+			// numeração lateral fechar certa na borda da secção. A folga que
+			// sobra do conteúdo fica em baixo.
+			height: 560px;
+			display: flex;
+			flex-direction: column;
 		}
     }
 

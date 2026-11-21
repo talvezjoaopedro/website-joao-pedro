@@ -53,6 +53,7 @@ const SocialLinks = () => {
     return (
         <div className={styles.linkList}>
             {listItems}
+            <div className={styles.linkFiller}></div>
             <Squares></Squares>
         </div>
     );
