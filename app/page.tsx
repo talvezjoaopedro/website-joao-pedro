@@ -20,14 +20,14 @@ export default function Home() {
                         <div className="relative h-full overflow-hidden m-4 -mt-4">
                             <Image
                                 src={"grid.svg"}
-                                alt="grid"
+                                alt=""
                                 height={634}
                                 width={448}
                                 className="absolute bottom-0 left-0"
                             ></Image>
                             <Image
                                 src={"animation-1.svg"}
-                                alt="grid"
+                                alt=""
                                 height={634}
                                 width={448}
                                 className="absolute bottom-0.5 left-0"
@@ -49,8 +49,8 @@ export default function Home() {
                                 className={`opacity-70 mix-blend-plus-lighter h-full object-cover`}
                                 width={224}
                                 height={208}
-                                src={"/avatar.png"}
-                                alt={"avatar"}
+                                src={"/avatar.webp"}
+                                alt={"João Pedro Magalhães"}
                             />
                         </div>
                         <div className={styles.cardHeading}>
@@ -82,6 +82,7 @@ export default function Home() {
                                     "https://cal.com/talvezjoaopedro/discovery"
                                 }
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 className={`${styles.cta}`}
                             >
                                 <div
@@ -124,14 +125,14 @@ export default function Home() {
                     <div className="relative h-full overflow-hidden mx-4">
                         <Image
                             src={"grid.svg"}
-                            alt="grid"
+                            alt=""
                             height={634}
                             width={448}
                             className="absolute top-0 left-0"
                         ></Image>
                         <Image
                             src={"animation-2.svg"}
-                            alt="grid"
+                            alt=""
                             height={634}
                             width={448}
                             className="absolute top-0.5 left-0"
